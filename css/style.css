@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* ⇉⇉⇉⇉⇉⇉⇉⇉⇉ Adding custom fonts ⇉⇉⇉⇉⇉⇉⇉⇉⇉ */
+@font-face {
+    font-family: 'MyCustomFont';
+    /* Give the font a name */
+    src: url('assests/Font/circular-std-medium-500.tff') format('tff');
+}
+
+@font-face {
+    font-family: "ParaFont";
+    src: url("assests/Font/Inter/Inter-VariableFont_opsz,wght.ttf");
+}
+
+/* ⇉⇉⇉⇉⇉⇉⇉⇉ Define the font in :root ⇉⇉⇉⇉⇉⇉⇉⇉ */
+:root {
+    --main-font: "MyCustomFont", sans-serif;
+    --secondary-font: "ParaFont", serif;
+    --primary-color: #5D50C6;
+    --secondary-color: #F85E9F;
+    --icon-color: #FF5722;
+    --text-color: #F85E9F;
+    --para-color: rgba(25, 24, 37, 0.5);
+    --para-color1: #000;
+    --btn-text-color: #EEEEEE;
+    --text-color1: #fff;
+    --icon-color1: #FACD49;
+}
+
+/* ⇉⇉⇉⇉⇉⇉⇉⇉ Our Header Section ⇉⇉⇉⇉⇉⇉⇉⇉ */
+
+
+.linear-gradient {
+    background: radial-gradient(circle at top left, rgba(255, 87, 34, 0.3) 5%, #fff, transparent 90%);
+}
+
+.header-section {
+    width: 100%;
+    height: 7.5rem;
+    padding: 1rem 10rem 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-section .logo {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    & img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    & h2 {
+        font-family: var(--main-font);
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.header-section .navbar-links {
+
+    & ul {
+        display: flex;
+        list-style: none;
+        gap: 4rem;
+
+    }
+
+    & a {
+        text-decoration: none;
+        font-family: var(--main-font);
+        font-size: 1.6rem;
+        color: var(--para-color);
+        font-weight: 600;
+    }
+
+    & li:first-child a {
+        color: var(--para-color1);
+    }
+}
+
+.login-btn {
+    gap: .5rem;
+
+    & button {
+        width: 9rem;
+        height: 3.5rem;
+        border: none;
+        font-family: var(--main-font);
+        font-size: 1.5rem;
+        font-weight: 600;
+
+    }
+
+    & .btn1 {
+        background-color: var(--text1-color);
+    }
+
+    & .btn2 {
+        background-color: var(--primary-color);
+        color: var(--btn-text-color);
+        border-radius: 5rem;
+        -webkit-border-radius: 5rem;
+        -moz-border-radius: 5rem;
+        -ms-border-radius: 5rem;
+        -o-border-radius: 5rem;
+    }
+}
+
+.hero-section {
+    width: 100%;
+    height: 100rem;
+    padding: 8rem 10rem 0 10rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--text-color1);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+
+    width: 24rem;
+    height: 4rem;
+
+    & h4 {
+        font-family: var(--main-font);
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+    }
+
+    & svg {
+
+        width: 2.5rem;
+        height: 2.5rem;
+        color: var(--secondary-color);
+    }
+}
+
+
+.hero-right-side {
+    position: relative;
+
+}
+
+.bg-img {
+    /* width: 10rem;
+    height: 17rem; */
+
+    & img {
+        width: 45rem;
+        height: 18rem;
+    }
+}
+
+.hero-img {
+
+
+    .img-content-1 {
+        top: 6rem;
+        left: 4rem;
+        position: absolute;
+
+        & .images1 {
+            width: 17rem;
+            height: 18.5rem;
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+
+        }
+
+        & .location1 {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--secondary-color);
+            z-index: 1;
+            position: absolute;
+            border-radius: 50%;
+
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+
+            bottom: -1rem;
+            left: -2rem;
+
+            & svg {
+                width: 2rem;
+                height: 2rem;
+                color: var(--text-color1);
+            }
+        }
+
+    }
+
+    .img-content-2 {
+        position: absolute;
+        right: 5.9rem;
+        top: 12.2rem;
+
+        & .images2 {
+            width: 17rem;
+            height: 25rem;
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+        }
+
+        & .location {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .6rem;
+
+            width: 10rem;
+            height: 3rem;
+            background-color: var(--text-color1);
+            /* color: var(--icon-color1); */
+            box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.1);
+            border-radius: 2rem;
+            -webkit-border-radius: 2rem;
+            -moz-border-radius: 2rem;
+            -ms-border-radius: 2rem;
+            -o-border-radius: 2rem;
+
+            position: absolute;
+            right: -5rem;
+            top: 20rem;
+
+            & svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                color: #FACD49;
+            }
+
+            & h4 {
+                font-size: 1.1rem;
+                font-family: var(--main-font);
+                font-weight: 600;
+
+            }
+        }
+
+
+        .contact-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--icon-color);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+
+            position: absolute;
+            right: 6rem;
+            bottom: -6rem;
+
+            box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.1);
+
+
+            & svg {
+                color: var(--text-color1);
+                width: 2rem;
+                height: 2rem;
+
+            }
+
+        }
+
+    }
+
+
+    & .images3 {
+        width: 17rem;
+        height: 18.5rem;
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+        position: absolute;
+        top: 26rem;
+        left: 4rem;
+    }
+}
