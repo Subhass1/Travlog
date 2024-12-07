@@ -1,0 +1,281 @@
+@media(max-width: 1250px) {
+    html {
+        font-size: 55.5%;
+    }
+}
+
+@media(max-width: 950px) {
+    html {
+        font-size: 40.5%;
+    }
+
+    .service-container-first,
+    .service-container-second,
+    .service-container-third {
+
+        & img {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .header-section {
+        height: 10rem;
+    }
+
+    .menu-item {
+        display: block;
+
+        & .menu-item-1 {
+            display: block;
+        }
+    }
+
+    .header-section .navbar-links {
+        display: none;
+    }
+
+    .login-btn {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    html {
+        font-size: 60.5%;
+    }
+
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+        text-align: center;
+    }
+
+    .hero-left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .company-logo-section {
+        padding: 36rem 0 0 0;
+    }
+
+    .service-section {
+        padding: 12rem 0 0 4rem;
+    }
+
+    .destination-section-main {
+        justify-content: center;
+    }
+
+    .travel-point-section {
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 8rem;
+    }
+
+    .travel-vector-bg {
+        margin-left: -14rem;
+    }
+
+    .right-travel-point {
+        padding-left: 10rem;
+    }
+
+    .heading-container-travel {
+
+        & h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .travel-svg {
+        right: 18rem;
+    }
+
+    .travel-customer-statices {
+        justify-content: center;
+    }
+
+    .customer-statices-first {
+        justify-content: center;
+    }
+
+    .key-features-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 18rem;
+
+        padding: 36rem 10rem 0 10rem;
+    }
+
+    .testemonial-section {
+        padding: 60rem 0 0 0;
+    }
+
+    .left-swipper-customer {
+        padding: 30rem 10rem 0 10rem;
+    }
+
+    .subscribe-newsletter {
+        & h5 {
+            font-size: 1rem;
+        }
+
+        & h3 {
+            font-size: 1rem;
+        }
+    }
+
+    .info-newsletter {
+        padding-top: 1rem;
+
+        & button {
+            padding: .5rem 1rem;
+            font-size: 1rem;
+        }
+    }
+
+    .footer-section {
+        flex-direction: column;
+        gap: 5rem;
+
+       & .line-break {
+            white-space: pre; /* Preserves spacing and acts like a break */
+            display: none;
+          } 
+    }
+
+    .footer-info-second{
+       width: 100%;
+    }
+
+}
+
+@media(max-width: 600px) {
+    html {
+        font-size: 50.5%;
+    }
+
+    .line-break {
+        display: block;
+    }
+}
+
+@media(max-width: 450px) {
+    html {
+        font-size: 40.5%;
+    }
+
+    .company-logo-bg {
+        & img {
+            width: 8rem;
+        }
+    }
+
+    .company-logo {
+        justify-content: center;
+
+        & img {
+            width: 16rem;
+        }
+    }
+
+    .location-svg,
+    .svg-calenders,
+    .svg-discount-coupon {
+
+        & img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    .key-features-bg {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .key-features-section {
+        padding: 20rem 10rem 0 10rem;
+    }
+
+}
+
+@media(max-width: 350px) {
+    html {
+        font-size: 30.5%;
+    }
+
+    .svg-container {
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn-arrow {
+        & img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    .key-features-section {
+        padding: 0 10rem 0 10rem;
+    }
+
+    .testemonial-section {
+        padding: 20rem 0 0 0;
+    }
+
+
+}
+
+@media(max-width: 250px) {
+    html {
+        font-size: 20.5%;
+    }
+
+    .key-features-section {
+        margin-top: -30rem;
+        /* top: -48rem; */
+    }
+
+    .testemonial-section {
+        padding: 0 0 0 0;
+    }
+}
+
+@media(max-width: 180px) {
+    html {
+        font-size: 10.5%;
+    }
+
+    .travel-vector-bg {
+        margin-left: -80rem;
+    }
+
+    .testemonial-section {
+        margin-top: -80rem;
+    }
+}
+
+@media(max-width: 90px) {
+    html {
+        font-size: 5.5%;
+    }
+}
+
+@media(max-width: 50px) {
+    html {
+        font-size: 1.5%;
+    }
+}
